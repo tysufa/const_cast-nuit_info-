@@ -10,7 +10,7 @@
   <body>
     <h1 id="Res">Bienvenue au Papope Clicker</h1> 
     <p>Nombre de cookies : </p>
-    <p id="nb_cookies">0</p>
+    <p id="nb_cookies">Voir nom du site</p>
     <input type="button" name="Clicker" id="Click" value="Cookie" />
     <p>Cookies par clicks : </p>
     <p id="nb_cpc">10</p>
@@ -18,6 +18,31 @@
     <p id="U1c">10</p>
     <input type="button" name="Upgrade" id="Up1" value="Améliorer" />
     <input type="button" name="Upgrade" id="Up2" value="Améliorer" style="display: none;"/>
+
+
+    <input type="button" name="NewForm" id="NewForm" value="Formulaire"/>
+    <form  id="form" style="display: none;">
+        <p>
+            Je sousigné :
+            <input type="text" name="Nom" id="Nom" size="50" />
+            <br>
+            Déclare, dans mon pleine âme et conscience, en possession de tous mes moyens, vouloir opperer l'Action<br>
+            <input type="text" name="Action" id="Action" value="action" />,
+            affin 
+            <select id="select1" size="1"><option value="" selected></option>
+                <option value="Increase">D'augmenter</option>
+                <option value="cat">De connaitre</option>
+            </select>
+            <select id="select2" size="1"><option value=""></option>
+                <option value="CPS">Mes CPS</option>
+                <option value="CPC">Mes CPC</option>
+            </select>
+        <p id="sicout" style="display: none;">
+            Ce qui me coutera :
+            <input type="text" name="cout" id="cout" value="cout" />
+        </p>
+        </p>
+    </form>
     <script src="Bras.js"></script>
   </body>
 </html>

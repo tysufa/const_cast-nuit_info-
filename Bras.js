@@ -10,7 +10,7 @@ var u2cost=100;
 
 let update = function () {
     setTimeout(arguments.callee, 1);
-    document.querySelector("#nb_cookies").textContent=cookies+"(+"+cps+")";
+    document.title=cookies+"(+"+cps+")";
     document.querySelector("#nb_cpc").textContent=cpc;
     document.querySelector("#U1c").textContent=u1cost;
     --ticksec;
@@ -61,7 +61,26 @@ let handlePurchase = function(){
 }();
 
 
-
+let handleForm = function(){
+    document.getElementById("NewForm").addEventListener("click",
+        function (e) {
+            document.getElementById("form").style.display="";
+            document.getElementById("Nom").value="veuillez, et ce sans vouloir vous contraindre, entrer votre no"
+            for (let index = 0; index < 100; index++) {
+               document.getElementById("Nom").value+="                                        "
+            }
+            document.getElementById("Action").value="Action"
+            document.getElementById("select1").value=""
+            document.getElementById("select2").value=""
+        })
+        document.getElementById("Action").addEventListener("focusout",
+            function (e) {
+                if( document.getElementById("Action").value="Améliorer"){
+                    document.getElementById("sicout").style.display=""
+                    document.getElementById("cout").value=u1cost;
+                }
+            })
+}();
 
 /*
 let Gametick = function () {
