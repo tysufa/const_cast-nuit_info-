@@ -1,3 +1,38 @@
 body {
-  background-color: lightblue;
+  background-image: url('Untitled.jpeg');
+}
+
+.header{
+  grid-area: header;
+}
+
+.left{
+  grid-area: left;
+}
+
+.main{
+  grid-area: main;
+}
+
+.right{
+  grid-area: right;
+}
+
+.grid{
+  display:grid;
+  grid-template-areas:
+    'header header header'
+    'left main right';
+  gap: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  grid-template-rows: 1fr 2fr;
+  grid-template-columns: 1fr 5fr 1fr;
+}
+
+.grid > div {
+  background-color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
 }
