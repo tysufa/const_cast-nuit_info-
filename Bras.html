@@ -9,19 +9,8 @@
   </head>
   <body>
     <h1 id="Res">Bienvenue au Papope Clicker</h1> 
-    <p>Nombre de cookies : </p>
-    <p id="nb_cookies">Voir nom du site</p>
     <input type="button" name="Clicker" id="Click" value="Cookie" />
-    <p>Cookies par clicks : </p>
-    <p id="nb_cpc">10</p>
-    <p>Amélioration de click 1 : </p>
-    <p id="U1c">10</p>
-    <input type="button" name="opacity" id="opacity" value="ou est passé le bouton ?" style="display:none;"/>
-    <input type="button" name="opacity2" id="opacity2" value="ou est passé 'ou est passé le bouton ?'" style="display:none;"/>
-    <input type="button" name="Upgrade" id="Up1" value="Améliorer" />
-    <input type="button" name="Upgrade" id="Up2" value="Améliorer" style="display: none;"/>
-
-
+ 
     <input type="button" name="NewForm" id="NewForm" value="Formulaire"/>
     <form  id="form" style="display: none;">
         <p>
@@ -30,10 +19,10 @@
             <br>
             Déclare, dans mon pleine âme et conscience, en possession de tous mes moyens, vouloir opperer l'Action<br>
             <input type="text" name="Action" id="Action" value="action" />,
-            affin 
+            <input type="button" name="Validate" id="Validate" value="Valider"/>affin 
             <select id="select1" size="1"><option value="" selected></option>
                 <option value="Increase">D'augmenter</option>
-                <option value="cat">De connaitre</option>
+                <option value="Get">De connaitre</option>
             </select>
             <select id="select2" size="1"><option value=""></option>
                 <option value="CPS">Mes CPS</option>
@@ -45,6 +34,13 @@
         </p>
         </p>
     </form>
+    <p id="errorlog" style="display: none; color:red;">
+        d
+    </p>
+    <p id="return" style="display: none; ">
+        
+    </p>
+    
     <script src="Bras.js"></script>
     <script src="clicks.js"></script>
   </body>
