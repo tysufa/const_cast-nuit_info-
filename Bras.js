@@ -7,6 +7,7 @@ var ticksec=0;
 var u1cost=10
 var u2cost=100;
 
+var usrname="";
 
 let update = function () {
     setTimeout(arguments.callee, 1);
@@ -18,7 +19,7 @@ let update = function () {
         ticksec=60;
         cookies+=cps;
     }
-    if (cookies>100){
+    if (cookies>=100){
         document.getElementById("Up2").style.display="";
     }
 }();
@@ -73,13 +74,40 @@ let handleForm = function(){
             document.getElementById("select1").value=""
             document.getElementById("select2").value=""
         })
-        document.getElementById("Action").addEventListener("focusout",
-            function (e) {
-                if( document.getElementById("Action").value="Améliorer"){
-                    document.getElementById("sicout").style.display=""
-                    document.getElementById("cout").value=u1cost;
+    document.getElementById("Action").addEventListener("focusout",
+        function (e) {
+            if( document.getElementById("Action").value=="Améliorer"){
+                document.getElementById("sicout").style.display=""
+                document.getElementById("cout").value=u1cost;
+            }
+        })
+    document.getElementById("Validate").addEventListener("click",
+        function (e) {
+            if(usrname=="" && document.getElementById("Nom").value.length<50){
+                console.log("yo")
+                usrname=document.getElementById("Nom").value;
+            }
+            if(document.getElementById("Nom").value!=usrname){
+                document.getElementById("errorlog").style.display="";
+                document.getElementById("errorlog").textContent="Votre nom d'utilisateur n'est pas celui enregistré dans la base de donnée, ou est trop long.";
+            }
+            else{
+                if(document.getElementById("Action").value=="Améliorer"){
+
                 }
-            })
+                else if(document.getElementById("Action").value=="Voir"){
+                    if(document.getElementById("select1").value=="Get"){
+                        if(document.getElementById("select2").value=="CPC")
+                            pop
+                    }
+                }
+                else{
+                    document.getElementById("errorlog").style.display="";
+                    document.getElementById("errorlog").textContent="L'action selectionée est invalide. Voulez vous améliorer ou voir ? Ne pas oublier la majuscule.";
+                }
+            }
+            document.getElementById("form").style.display="None";
+        })
 }();
 
 /*
