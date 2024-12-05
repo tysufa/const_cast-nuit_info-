@@ -7,6 +7,7 @@ body {
   background-image: url('Archive/Grand\ fond.png');
   background-size: 100%;
   height: var(--height);
+  /*filter: brightness(0.5);*/
 }
 
 .header{
@@ -15,7 +16,6 @@ body {
 
 .anim{
   animation: popup-animation 0.5s ease-in-out;
-  /*transition: all 5s ease-in-out;*/
 }
 img{
   max-width: 100%;
