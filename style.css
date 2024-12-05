@@ -29,7 +29,6 @@ body {
     'header header header'
     'left main right';
   gap: 10px;
-  background-color: rgba(255, 255, 255, 0.5);
   padding: 10px;
   grid-template-rows: calc(var(--height)*10/100) calc(var(--height)*80/100);
   grid-template-columns: 1fr 5fr 1fr;
