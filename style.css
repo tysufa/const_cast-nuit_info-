@@ -9,11 +9,57 @@ body {
   height: var(--height);
 }
 
+/*.godrays{*/
+/*  position: absolute;*/
+/*  top: 100%;*/
+/*  left: 20%;*/
+/*  cursor: pointer;*/
+/*}*/
+/**/
+/*#lettreGodrays{*/
+/*  position: absolute;*/
+/*}*/
+/**/
+/*#timbreGodrays{*/
+/*  position: absolute;*/
+/*  width: 20%;*/
+/*  top: 40px;*/
+/*  left: 173%;*/
+/*}*/
+
+#Ibiome{
+  cursor: pointer;
+}
+
+.biome{
+  position: absolute;
+  top: 345%;
+  left: 67%;
+}
+
+#lettreBiome{
+  position: absolute;
+  left: -90%;
+  top: 20%;
+}
+
+#timbreBiome{
+  position: absolute;
+  width: 20%;
+  top: 120px;
+  left: -16%;
+}
+
+
+#Ialgue{
+  cursor: pointer;
+}
+
 .algue{
   position: absolute;
+
   top: 100%;
   left: 20%;
-  cursor: pointer;
 }
 
 #lettreAlgue{
@@ -27,10 +73,14 @@ body {
   left: 173%;
 }
 
+
+#Ibaleine{
+  cursor: pointer;
+}
+
 .baleine{
   position: absolute;
   top: 200%;
-  cursor: pointer;
 }
 
 #lettreBaleine{
@@ -47,6 +97,9 @@ body {
 .dechet{
   position: absolute;
   top: 490%;
+}
+
+#Idechet{
   cursor: pointer;
 }
 
@@ -60,23 +113,6 @@ body {
   top: 50px;
   left: 86%;
 }
-
-/*.virus{*/
-/*  position: relative;*/
-/*}*/
-/**/
-/*#timbreVirus{*/
-/*  width: 20%;*/
-/*  position: absolute;*/
-/*  top: 32px;*/
-/*  left: 73%;*/
-/*}*/
-/**/
-/*#lettreVirus{*/
-/*  position: relative;*/
-/*  top: 0;*/
-/*  left: 0;*/
-/*}*/
 
 .header{
   grid-area: header;
