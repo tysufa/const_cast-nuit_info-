@@ -3,7 +3,7 @@ var cpc=1;
 var cps=0;
 
 var u1cost=10
-var u2cost=100;
+var u2cost=20;
 
 var usrname="";
 
@@ -31,7 +31,7 @@ var ticksec=0;
 
 let update = function () {
     setTimeout(arguments.callee, 1);
-    document.title=cookies+"(+"+cps+")";
+    document.title=cookies;
     --ticksec;
     if (ticksec<=0){
         ticksec=60;
@@ -55,7 +55,7 @@ let handleClicker = function(){
     });
 }();
 
-
+//window.prompt("sometext","defaultText");
 let handleForm = function(){
     document.getElementById("NewForm").addEventListener("click",
         function (e) {
@@ -72,13 +72,14 @@ let handleForm = function(){
             document.getElementById("select2").value=""
             document.getElementById("cout").value="0"
         })
-    document.getElementById("Action").addEventListener("focusout",
+    document.getElementById("Action").addEventListener("input",
         function (e) {
             if( document.getElementById("Action").value=="Améliorer"){
                 document.getElementById("sicout").style.display=""
             }
+            else document.getElementById("sicout").style.display="None"
         })
-        document.getElementById("select2").addEventListener("focusout",
+        document.getElementById("select2").addEventListener("input",
             function (e) {
                 if( document.getElementById("select2").value=="CPC"){
                     document.getElementById("cout").value=u1cost;
