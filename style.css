@@ -7,8 +7,76 @@ body {
   background-image: url('Archive/Grand\ fond.png');
   background-size: 100%;
   height: var(--height);
-  /*filter: brightness(0.5);*/
 }
+
+.algue{
+  position: absolute;
+  top: 100%;
+  left: 20%;
+  cursor: pointer;
+}
+
+#lettreAlgue{
+  position: absolute;
+}
+
+#timbreAlgue{
+  position: absolute;
+  width: 20%;
+  top: 40px;
+  left: 173%;
+}
+
+.baleine{
+  position: absolute;
+  top: 200%;
+  cursor: pointer;
+}
+
+#lettreBaleine{
+  position: relative;
+}
+
+#timbreBaleine{
+  position: absolute;
+  width: 12%;
+  top: 50px;
+  left: 86%;
+}
+
+.dechet{
+  position: absolute;
+  top: 490%;
+  cursor: pointer;
+}
+
+#lettreDechet{
+  position: relative;
+}
+
+#timbreDechet{
+  position: absolute;
+  width: 12%;
+  top: 50px;
+  left: 86%;
+}
+
+/*.virus{*/
+/*  position: relative;*/
+/*}*/
+/**/
+/*#timbreVirus{*/
+/*  width: 20%;*/
+/*  position: absolute;*/
+/*  top: 32px;*/
+/*  left: 73%;*/
+/*}*/
+/**/
+/*#lettreVirus{*/
+/*  position: relative;*/
+/*  top: 0;*/
+/*  left: 0;*/
+/*}*/
 
 .header{
   grid-area: header;
@@ -46,20 +114,20 @@ img{
   height: var(--height);
   grid-template-areas:
     'header header header'
-    'left1 main right'
-    'left2 main right'
+    'left1 left1 right'
+    'left2 main2 right'
     'left main right'
     'left main right'
     'left main right'
     'left main right';
-  gap: 10px;
-  padding: 10px;
+  gap: 0px;
+  padding: 0px;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
 .grid > div {
-  background-color: rgba(255, 255, 255, 0.1);
+  /*background-color: rgba(255, 255, 255, 0.1);*/
   text-align: center;
   font-size: 30px;
 }
