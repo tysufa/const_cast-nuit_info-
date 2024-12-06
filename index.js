@@ -37,29 +37,8 @@ let timbreAlgue = document.querySelector("#timbreAlgue");
 
 affichageLettre(algue, lettreAlgue, timbreAlgue);
 
+let biome = document.querySelector("#Ibiome");
+let lettreBiome = document.querySelector("#lettreBiome");
+let timbreBiome = document.querySelector("#timbreBiome");
 
-
-
-//imVirus = document.querySelector("#virus");
-//lettreVirus = document.querySelector("#lettreVirus");
-//timbreVirus = document.querySelector("#timbreVirus");
-//imVirus .addEventListener('click', () => {
-//  if (zoomed_on_element){
-//    lettreVirus.classList.toggle('anim');
-//    timbreVirus.classList.toggle('anim');
-//    document.querySelector("body").style.filter = "brightness(1)";
-//    zoomed_on_element = false;
-//    timbreVirus.style.display = "none";
-//    lettreVirus.style.display = "none";
-//  } else{
-//    document.querySelector("body").style.backdropFilter = "brightness(0.5)";
-//    //document.querySelector("div").style.opacity = 0.5;
-//    //lettreVirus.style.filter = "brightness(2)";
-//    //lettreVirus.style.opacity = 1;
-//    lettreVirus.classList.toggle('anim');
-//    timbreVirus.classList.toggle('anim');
-//    zoomed_on_element = true;
-//    timbreVirus.style.display = "";
-//    lettreVirus.style.display = "";
-//  }
-//})
+affichageLettre(biome, lettreBiome, timbreBiome);
