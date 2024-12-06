@@ -70,10 +70,10 @@
     background-size: contain;
 }
 
-.obstacle-xs { width: 30px; height: 60px; }
-.obstacle-s { width: 60px; height: 90px; }
-.obstacle-m { width: 60px; height: 120; }
-.obstacle-l { width: 120px; height: 120px; }
+.obstacle-xs { width: 28px; height: 30px; }
+.obstacle-s { width: 56px; height: 60px; }
+.obstacle-m { width: 84px; height: 90px; }
+.obstacle-l { width: 112; height: 120px; }
 
 @keyframes move {
     0% {
