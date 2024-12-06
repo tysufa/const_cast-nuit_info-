@@ -72,7 +72,7 @@
 
 .obstacle-xs { width: 30px; height: 60px; }
 .obstacle-s { width: 60px; height: 90px; }
-.obstacle-m { width: 60px; height: 90px; }
+.obstacle-m { width: 60px; height: 120; }
 .obstacle-l { width: 120px; height: 120px; }
 
 @keyframes move {
